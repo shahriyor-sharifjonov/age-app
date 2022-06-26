@@ -30,5 +30,14 @@ mixin tests()
                         img(src="@img/tests-img-4.png", alt="" draggable="false" loading="lazy")
                     .tests__num 
                         span 4
-                    a(href="https://ageapp.net/downloads/age_detector_v1.2.2_x86.zip").tests__subtitle Скачать приложение для персонального компьютера.
+                    a(href="https://ageapp.net/downloads/age_detector_v1.2.2_x86.zip" itemscope itemtype="http://schema.org/Product").tests__subtitle 
+                        meta(itemprop="name" content="age_detector_v1.2.2_x86.zip")
+                        meta(itemprop="model" content="v1.2.2_x86")
+                        meta(itemprop="url" href="https://ageapp.net/downloads/age_detector_v1.2.2_x86.zip")
+                        meta(itemprop="image" content="https://ageapp.net/images/favicons/favicon-32x32.png")
+                        meta(itemprop="description" content="Приложение 'Детектор возраста' для персонального компьютера")
+                        div(itemprop="offers" itemscope="" itemtype="https://schema.org/Offer")
+                            meta(itemprop="priceCurrency" content="RUB")
+                            meta(itemprop="price" content="0.00")
+                            p Скачать приложение для персонального компьютера.
                     p.tests__p Хотите попробовать приложение на ПК? Нет ничего проще. Просто скачайте!
