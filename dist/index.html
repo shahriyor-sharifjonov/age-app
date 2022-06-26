@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220626101755">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220626102957">
+    <title>Мой возраст - онлайн сервис определяющий визуальный возраст человека по фото.</title>
+    <meta name="description" content="Узнайте на сколько лет выглядите вы или ваши ваши друзья на фотографии.">
   </head>
-  <body> 
+  <body itemscope itemtype="https://schema.org/WebPage">
     <div class="wrapper"> 
             <header class="header">
               <nav class="header__nav container"> <a class="header__logo" href="index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" draggable="false" loading="lazy"></picture> App.net</a>
@@ -48,13 +49,12 @@
 </linearGradient>
 </defs>
 </svg></span></div>
-                <ul class="header__list">
+                <div class="header__list">
                   <div class="header__list-content container">
-                    <li class="header__li"> <a class="header__link" href="https://ageapp.net/ru/privacy">Политика конфиденциальности  </a></li>
-                    <li class="header__li"> <a class="header__link" href="https://vk.com/ageapp" target="_blank" rel="noreferrer">Наша группа <img src="img/header-icon.svg" alt="" draggable="false" loading="lazy"></a></li>
+                    <div class="header__links" itemprop="breadcrumb"><a class="header__link" href="https://ageapp.net/ru/privacy">Политика конфиденциальности  </a><a class="header__link" href="https://vk.com/ageapp" target="_blank" rel="noreferrer">Наша группа <img src="img/header-icon.svg" alt="" draggable="false" loading="lazy"></a></div>
                     <button class="header__btn enable-lg" type="button">Eng</button>
                   </div>
-                </ul>
+                </div>
                 <button class="header__btn disable-lg" type="button">Eng</button>
               </nav>
             </header>
@@ -164,6 +164,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20220626101755"> </script>
+    <script src="js/app.min.js?_v=20220626102957"> </script>
   </body>
 </html>

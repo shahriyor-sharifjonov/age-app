@@ -6,6 +6,17 @@
     @include media(575){
         padding: 8px 0;
     }
+    &__links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 60px;
+        row-gap: 27px;
+        @include media(992){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
     &__nav{
         display: flex;
         justify-content: space-between;
