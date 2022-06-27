@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Мой возраст - онлайн сервис определяющий визуальный возраст человека по фото.
+        meta(name="description" content="Узнайте на сколько лет выглядите вы или ваши ваши друзья на фотографии.")
+    body(itemscope itemtype="https://schema.org/WebPage")
+        .wrapper 
+            include components/header 
+            +header 
+            .main
+                .privacy.container
+                    h1.privacy__title H1 Политика конфиденциальности персональных данных
+                    h2.privacy__subtitle H2 Политика конфиденциальности персональных данных
+                    h3.privacy__h3 H3 Политика конфиденциальности персональных данных
+                    p.privacy__p Paragraph
+                    p.privacy__text Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую сайт "Детектор возраста", (далее – ageapp.net) расположенный на доменном имени ageapp.net (а также его субдоменах), может получить о Пользователе во время использования сайта ageapp.net (а также его субдоменов), его программ и его продуктов.
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 

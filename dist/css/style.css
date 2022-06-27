@@ -450,6 +450,19 @@
      -moz-column-gap: 14px;
           column-gap: 14px;
   margin-bottom: 29px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro__link {
+  width: 50%;
+  max-width: 149.5px;
+  line-height: 0;
+}
+
+.intro__link img {
+  width: 100%;
 }
 
 .intro__btn {
@@ -508,6 +521,7 @@
           column-gap: 20px;
 }
 
+.intro__site svg,
 .intro__site img {
   width: 100%;
 }
@@ -594,13 +608,13 @@
   color: #0B2238;
 }
 
-.tests {
+.ageapp {
   padding-top: 74px;
   padding-bottom: 69px;
   background: url(../img/features-bg.svg) center/cover no-repeat;
 }
 
-.tests__title {
+.ageapp__title {
   margin-bottom: 13px;
   font-weight: 800;
   font-size: 42px;
@@ -609,7 +623,7 @@
   color: #0B2238;
 }
 
-.tests__desc {
+.ageapp__desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -620,7 +634,7 @@
   width: 100%;
 }
 
-.tests__content {
+.ageapp__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,61 +649,61 @@
   row-gap: 26px;
 }
 
-.tests__item {
+.ageapp__item {
   width: calc(50% - 15.5px);
   background: #FAFAFA;
   border-radius: 20px;
 }
 
-.tests__item:nth-of-type(1) {
+.ageapp__item:nth-of-type(1) {
   padding: 50px 70px 73px 67px;
 }
 
-.tests__item:nth-of-type(1) .tests__p {
+.ageapp__item:nth-of-type(1) .ageapp__p {
   margin-bottom: 35px;
 }
 
-.tests__item:nth-of-type(1) .tests__subtitle {
+.ageapp__item:nth-of-type(1) .ageapp__subtitle {
   max-width: 370px;
   width: 100%;
 }
 
-.tests__item:nth-of-type(2) {
+.ageapp__item:nth-of-type(2) {
   padding: 65px 70px 80px 67px;
 }
 
-.tests__item:nth-of-type(2) .tests__img {
+.ageapp__item:nth-of-type(2) .ageapp__img {
   margin-bottom: 64px;
 }
 
-.tests__item:nth-of-type(2) .tests__p {
+.ageapp__item:nth-of-type(2) .ageapp__p {
   max-width: 350px;
   width: 100%;
 }
 
-.tests__item:nth-of-type(2) .tests__num {
+.ageapp__item:nth-of-type(2) .ageapp__num {
   background: #85C4FF;
 }
 
-.tests__item:nth-of-type(3) {
+.ageapp__item:nth-of-type(3) {
   padding: 53px 70px 83px 70px;
 }
 
-.tests__item:nth-of-type(3) .tests__p {
+.ageapp__item:nth-of-type(3) .ageapp__p {
   margin-bottom: 68px;
   max-width: 350px;
   width: 100%;
 }
 
-.tests__item:nth-of-type(3) .tests__num {
+.ageapp__item:nth-of-type(3) .ageapp__num {
   background: #6547A5;
 }
 
-.tests__item:nth-of-type(4) {
+.ageapp__item:nth-of-type(4) {
   padding: 74px 0px 44px 70px;
 }
 
-.tests__item:nth-of-type(4) .tests__img {
+.ageapp__item:nth-of-type(4) .ageapp__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,22 +713,22 @@
   margin-bottom: 64px;
 }
 
-.tests__item:nth-of-type(4) .tests__subtitle {
+.ageapp__item:nth-of-type(4) .ageapp__subtitle {
   text-decoration: underline;
   max-width: 370px;
   width: 100%;
   display: block;
 }
 
-.tests__item:nth-of-type(4) .tests__num {
+.ageapp__item:nth-of-type(4) .ageapp__num {
   background: #CE10BB;
 }
 
-.tests__item:nth-of-type(4) .tests__p {
+.ageapp__item:nth-of-type(4) .ageapp__p {
   max-width: 350px;
 }
 
-.tests__num {
+.ageapp__num {
   font-family: DMSans;
   font-style: normal;
   font-weight: 700;
@@ -738,7 +752,7 @@
   margin-bottom: 22px;
 }
 
-.tests__subtitle {
+.ageapp__subtitle {
   font-weight: 800;
   font-size: 32px;
   line-height: 38px;
@@ -746,7 +760,7 @@
   margin-bottom: 22px;
 }
 
-.tests__p {
+.ageapp__p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -907,6 +921,14 @@
   outline: none;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 body.hidden {
   overflow: hidden;
 }
@@ -940,6 +962,64 @@ a {
 
 ul {
   list-style: none;
+}
+
+.privacy {
+  padding: 64px 15px;
+}
+
+.privacy__title {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+  color: #0B2238;
+}
+
+.privacy__subtitle {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+  color: #0B2238;
+}
+
+.privacy__h3 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #0B2238;
+  margin-bottom: 55px;
+}
+
+.privacy__p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #0B2238;
+  margin-bottom: 27px;
+}
+
+.privacy__text {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #0B2238;
 }
 
 @media (min-width: 576px) {
@@ -1109,7 +1189,7 @@ ul {
 
   .intro__title {
     font-weight: 800;
-    font-size: 40px;
+    font-size: 38px;
     line-height: 40px;
     margin-bottom: 10px;
     max-width: 100%;
@@ -1187,13 +1267,13 @@ ul {
             align-items: center;
   }
 
-  .tests__item {
+  .ageapp__item {
     width: calc(100% - 200px);
     margin-left: auto;
     margin-right: auto;
   }
 
-  .tests__item:nth-of-type(4) .tests__img {
+  .ageapp__item:nth-of-type(4) .ageapp__img {
     margin-bottom: 30px;
   }
 
@@ -1267,36 +1347,36 @@ ul {
     margin-bottom: 29px;
   }
 
-  .tests {
+  .ageapp {
     background: url(../img/features-bg.svg) left/cover no-repeat;
     padding-top: 38px;
     padding-bottom: 31px;
   }
 
-  .tests__title {
+  .ageapp__title {
     font-weight: 800;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 23px;
   }
 
-  .tests__desc {
+  .ageapp__desc {
     margin-bottom: 16px;
   }
 
-  .tests__item {
+  .ageapp__item {
     width: calc(100% - 100px);
   }
 
-  .tests__item:nth-of-type(1) {
+  .ageapp__item:nth-of-type(1) {
     padding: 40px 36px 53px 35px;
   }
 
-  .tests__item:nth-of-type(1) .tests__p {
+  .ageapp__item:nth-of-type(1) .ageapp__p {
     margin-bottom: 20px;
   }
 
-  .tests__item:nth-of-type(2) {
+  .ageapp__item:nth-of-type(2) {
     padding: 30px 30px 50px 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1307,30 +1387,30 @@ ul {
             flex-direction: column;
   }
 
-  .tests__item:nth-of-type(2) .tests__img {
+  .ageapp__item:nth-of-type(2) .ageapp__img {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
     margin-bottom: 0;
   }
 
-  .tests__item:nth-of-type(2) .tests__p {
+  .ageapp__item:nth-of-type(2) .ageapp__p {
     margin-bottom: 40px;
   }
 
-  .tests__item:nth-of-type(3) {
+  .ageapp__item:nth-of-type(3) {
     padding: 42px 30px 66px 30px;
   }
 
-  .tests__item:nth-of-type(4) {
+  .ageapp__item:nth-of-type(4) {
     padding: 50px 0px 50px 26px;
   }
 
-  .tests__item:nth-of-type(4) .tests__img img {
+  .ageapp__item:nth-of-type(4) .ageapp__img img {
     width: 310px;
   }
 
-  .tests__subtitle {
+  .ageapp__subtitle {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 20px;
@@ -1358,6 +1438,27 @@ ul {
     max-width: 290px;
     width: 100%;
   }
+
+  .privacy__title {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  .privacy__subtitle {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .privacy__h3 {
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .privacy__p {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1380,7 +1481,7 @@ ul {
   }
 
   .intro__offer a {
-    font-style: 14px;
+    font-size: 14px;
   }
 
   .try__link {
@@ -1457,7 +1558,7 @@ ul {
     width: 170px;
   }
 
-  .tests__item {
+  .ageapp__item {
     width: calc(100% - 80px);
   }
 
@@ -1467,7 +1568,7 @@ ul {
 }
 
 @media (max-width: 450px) {
-  .tests__item {
+  .ageapp__item {
     width: 100%;
   }
 }
@@ -1479,7 +1580,7 @@ ul {
 }
 
 @media (max-width: 374px) {
-  .tests__item:nth-of-type(4) .tests__img img {
+  .ageapp__item:nth-of-type(4) .ageapp__img img {
     width: 275px;
   }
 }

@@ -1,4 +1,4 @@
-.tests{
+.ageapp{
     padding-top: 74px;
     padding-bottom: 69px;
     background: url(../img/features-bg.svg) center / cover no-repeat;
@@ -64,13 +64,13 @@
             @include media(768){
                 padding: 40px 36px 53px 35px;
             }
-            .tests__p{
+            .ageapp__p{
                 margin-bottom: 35px;
                 @include media(768){
                     margin-bottom: 20px;
                 }
             }
-            .tests__subtitle{
+            .ageapp__subtitle{
                 max-width: 370px;
                 width: 100%;
             }
@@ -82,21 +82,21 @@
                 display: flex;
                 flex-direction: column;
             }
-            .tests__img{
+            .ageapp__img{
                 margin-bottom: 64px;
                 @include media(768){
                     order: 5;
                     margin-bottom: 0;
                 }
             }
-            .tests__p{
+            .ageapp__p{
                 max-width: 350px;
                 width: 100%;
                 @include media(768){
                     margin-bottom: 40px;
                 }
             }
-            .tests__num{
+            .ageapp__num{
                 background: #85C4FF; 
             }
         }
@@ -105,12 +105,12 @@
             @include media(768){
                 padding: 42px 30px 66px 30px;
             }
-            .tests__p{
+            .ageapp__p{
                 margin-bottom: 68px;
                 max-width: 350px;
                 width: 100%;
             }
-            .tests__num{
+            .ageapp__num{
                 background: #6547A5;
             }
         }
@@ -119,7 +119,7 @@
             @include media(768){
                 padding: 50px 0px 50px 26px;
             }
-            .tests__img{
+            .ageapp__img{
                 display: flex;
                 justify-content: flex-end;
                 margin-bottom: 64px;
@@ -135,16 +135,16 @@
                     }
                 }
             }
-            .tests__subtitle{
+            .ageapp__subtitle{
                 text-decoration: underline;
                 max-width: 370px;
                 width: 100%;
                 display: block;
             }
-            .tests__num{
+            .ageapp__num{
                 background: #CE10BB;
             }
-            .tests__p{
+            .ageapp__p{
                 max-width: 350px;
             }
         }

@@ -46,7 +46,7 @@ mixin header()
             .header__list
                 .header__list-content.container
                     .header__links(itemprop="breadcrumb")
-                        a(href="https://ageapp.net/ru/privacy").header__link Политика конфиденциальности  
+                        a(href="privacy.html").header__link Политика конфиденциальности  
                         a(href="https://vk.com/ageapp" target="_blank" rel="noreferrer").header__link Наша группа #[img(src="@img/header-icon.svg", alt="" draggable="false" loading="lazy")]
-                    button(type="button").header__btn.enable-lg Eng
-            button(type="button").header__btn.disable-lg Eng
+                    a(href="#!").header__btn.enable-lg Eng
+            a(href="#!").header__btn.disable-lg Eng
