@@ -1522,6 +1522,9 @@ ul {
     display: none !important;
   }
 
+  .no-webp .intro {
+    background: url("../img/intro-bg-sm.png"); }
+
   .intro__offer a {
     font-size: 14px;
   }
@@ -1608,4 +1611,9 @@ ul {
   .ageapp__item:nth-of-type(4) .ageapp__img img {
     width: 275px;
   }
+}
+
+@media (max-width: 576px) {
+
+  .webp .intro { background: url(../img/intro-bg-sm.webp); }
 }

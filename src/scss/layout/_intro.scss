@@ -16,6 +16,9 @@
         padding-bottom: 40px;
         background: url('../img/intro-bg.svg') left / cover no-repeat;
     }
+    @include media(576){
+        background: url('../img/intro-bg-sm.png');
+    }
     &__girl{
         position: absolute;
         top: 0;
